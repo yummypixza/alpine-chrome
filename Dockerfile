@@ -1,14 +1,15 @@
-FROM alpine:3.19
+FROM alpine:3.23
 
 # Installs latest Chromium package.
 RUN apk upgrade --no-cache --available \
     && apk add --no-cache \
-      chromium-swiftshader \
       ttf-freefont \
-      font-noto-emoji \
     && apk add --no-cache \
       --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community \
-      font-wqy-zenhei
+      chromium-swiftshader \
+      font-noto-cjk \
+      font-noot \
+      font-noto-emoji \
 
 COPY local.conf /etc/fonts/local.conf
 
