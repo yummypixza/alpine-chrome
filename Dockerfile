@@ -9,7 +9,7 @@ RUN apk upgrade --no-cache --available \
       chromium-swiftshader \
       font-noto-cjk \
       font-noot \
-      font-noto-emoji \
+      font-noto-emoji
 
 COPY local.conf /etc/fonts/local.conf
 
