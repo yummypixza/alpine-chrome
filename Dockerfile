@@ -8,7 +8,7 @@ RUN apk upgrade --no-cache --available \
       --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community \
       chromium-swiftshader \
       font-noto-cjk \
-      font-noot \
+      font-noto \
       font-noto-emoji
 
 COPY local.conf /etc/fonts/local.conf
