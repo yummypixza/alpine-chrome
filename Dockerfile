@@ -4,9 +4,9 @@ FROM alpine:3.23
 RUN apk upgrade --no-cache --available \
     && apk add --no-cache \
       ttf-freefont \
+      chromium-swiftshader \
     && apk add --no-cache \
       --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community \
-      chromium-swiftshader \
       font-noto-cjk \
       font-noto \
       font-noto-emoji
