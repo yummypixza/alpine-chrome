@@ -27,4 +27,4 @@ ENV CHROME_BIN=/usr/bin/chromium-browser \
 
 # Autorun chrome headless
 ENV CHROMIUM_FLAGS="--disable-software-rasterizer --disable-dev-shm-usage"
-ENTRYPOINT ["chromium-browser", "--headless"]
+ENTRYPOINT ["chromium-headless-shell"]
