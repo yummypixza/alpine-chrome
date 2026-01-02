@@ -67,7 +67,7 @@ jobs:
           context: ${{ inputs.folder }}
           load: true
           labels: ${{ steps.meta.outputs.labels }}
-          tags: zenika/${{ env.IMAGE_REPOSITORY }}:${{ inputs.tag }}
+          tags: yummypixza/${{ env.IMAGE_REPOSITORY }}:${{ inputs.tag }}
 
       - name: Test
         env:
@@ -145,8 +145,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           labels: ${{ steps.meta.outputs.labels }}
           tags: |
-            ghcr.io/zenika/${{ env.IMAGE_NAME }}
-            ghcr.io/zenika/${{ env.IMAGE_VERSIONED_NAME }}
+            ghcr.io/yummypixza/${{ env.IMAGE_NAME }}
+            ghcr.io/yummypixza/${{ env.IMAGE_VERSIONED_NAME }}
           push: true
           cache-from: type=gha
           cache-to: type=gha
