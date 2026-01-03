@@ -1,4 +1,4 @@
-FROM zenika/alpine-chrome
+FROM yummypixza/alpine-chrome
 
 USER root
 RUN apk add --no-cache chromium-chromedriver
