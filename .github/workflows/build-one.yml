@@ -147,6 +147,10 @@ jobs:
           tags: |
             ghcr.io/yummypixza/${{ env.IMAGE_NAME }}
             ghcr.io/yummypixza/${{ env.IMAGE_VERSIONED_NAME }}
-          push: true
+          push: false
           cache-from: type=gha
           cache-to: type=gha
+
+      - name: Push
+        run: |
+          docker push --all-tags ghcr.io/${{ github.repository }}
